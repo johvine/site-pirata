@@ -1,73 +1,80 @@
-/* Resetando alguns estilos padrão */
-* {
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #222125;
+    color: #333;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #2e003e; /* Cor de fundo roxa escura */
-    color: #e6e6e6; /* Texto claro */
+header {
+    background-color: #140016;
+    color: #950ba1;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+}
+
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    gap: 20px;
+    background-color: #470350;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 20px;
     width: 90%;
     max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.movie-card {
-    background-color: #3c0063; /* Cor roxa para as cartas */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.movie-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.movie-card:hover {
-    transform: translateY(-10px); /* Efeito ao passar o mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.movie-card img {
+.movie-item {
+    background-color: #f700ff;
+    border: 1px solid #a200ff;
+    border-radius: 5px;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #8a00b2; /* Cor para separar a imagem do texto */
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
 }
 
-.movie-card h2 {
-    font-size: 1.5rem;
-    margin: 15px;
-    color: #e6e6e6;
+.movie-item:hover {
+    transform: scale(1.05);
 }
 
-.movie-card p {
-    font-size: 1rem;
-    margin: 0 15px 15px;
-    color: #dcdcdc; /* Texto mais suave */
+.movie-item img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
-    }
+.movie-item h3 {
+    margin: 10px 0 5px;
 }
 
-@media (max-width: 480px) {
-    .container {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d1663;
+    color: #fff;
 }
