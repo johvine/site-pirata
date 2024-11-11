@@ -1,47 +1,82 @@
 /* style.css */
 
+/* Estilos básicos */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #282434; /* Roxo escuro */
-    color: #fff;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .movie-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .movie-item   
-   {
-    background-color:   
-   #382E48; /* Roxo mais claro */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .movie-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  .movie-item h3 {
-    padding: 10px;
-    margin: 0;
-    color: #E1BEE7; /* Roxa claro */
-  }
-  
-  .movie-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d199ff;
+  color: #333;
+}
+
+header {
+  background-color: #56016b;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header input {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 400px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-item {
+  background-color: #30003b;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-item h3 {
+  margin: 10px 0 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #17001d;
+  color: #fff;
+}
