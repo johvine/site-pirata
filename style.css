@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d199ff;
+  background-color: #6505b4;
   color: #333;
 }
 
@@ -51,7 +51,7 @@ nav a {
 }
 
 .movie-item {
-  background-color: #30003b;
+  background-color: #c789d4;
   border: 1px solid #000000;
   border-radius: 5px;
   width: 100%;
